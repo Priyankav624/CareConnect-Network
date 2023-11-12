@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Placeholder } from 'react-bootstrap';
 import Donation from './Donation'
 
-const BlogPage = () => {
+const BlogsNews = () => {
     
   const blogPosts = [
     {
@@ -15,7 +15,6 @@ const BlogPage = () => {
     },
   
   ];
-
   return (
     <>
     <Container style={{marginTop:"40px"}}>
@@ -53,4 +52,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default BlogsNews;
