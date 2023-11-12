@@ -28,6 +28,7 @@ const Navbar2 = () =>  {
                   <Nav.Link as={Link} to="/volunteer">Volunteer</Nav.Link>
                   <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
                 </Nav>
+                
         </Navbar.Collapse>
       </Container>
     </Navbar>

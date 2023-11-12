@@ -1,6 +1,6 @@
 import React from 'react'
-import CoreAch from './CoreAch';
-import Carousels from './Carousels';
+import CoreAch from './HomePage/CoreAch';
+import Carousels from './HomePage/Carousels';
 import Donation from './Donation';
 
 const HomePage = () => {
@@ -10,7 +10,6 @@ const HomePage = () => {
       <CoreAch />
       <Donation />
     </>
-  
   )
 }
 
