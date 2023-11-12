@@ -1,198 +1,134 @@
-import React from 'react'
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container' ;
+import React, { useState } from 'react';
+import { Carousel, Container, Row, Col } from 'react-bootstrap';
 
 const CoreAch = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    if (e.type === 'click') {
+      setActiveIndex(selectedIndex);
+    }
+  };
+
+  const carouselItems = [
+    {
+      imageSrc1: 'https://via.placeholder.com/400x300?text=Empowering+Lives+Image+1',
+      imageSrc2: 'https://via.placeholder.com/400x300?text=Empowering+Lives+Image+2',
+      title: 'Empowering Lives',
+      description: 'Initiatives that make a positive impact on individuals and communities.',
+    },
+    {
+      imageSrc1: 'https://via.placeholder.com/400x300?text=Celebrating+Collaboration+Image+1',
+      imageSrc2: 'https://via.placeholder.com/400x300?text=Celebrating+Collaboration+Image+2',
+      title: 'Celebrating Collaboration',
+      description: 'Success achieved through collaborative efforts, bringing together diverse talents for positive change.',
+    },
+    {
+      imageSrc1: 'https://via.placeholder.com/400x300?text=Integrity+and+Transparency+Image+1',
+      imageSrc2: 'https://via.placeholder.com/400x300?text=Integrity+and+Transparency+Image+2',
+      title: 'Integrity and Transparency',
+      description: 'Upholding the highest standards of integrity, ensuring transparency and ethical practices in all our endeavors.',
+    },
+    {
+      imageSrc1: 'https://via.placeholder.com/400x300?text=Innovative+Solutions+Image+1',
+      imageSrc2: 'https://via.placeholder.com/400x300?text=Innovative+Solutions+Image+2',
+      title: 'Innovative Solutions',
+      description: 'Driving innovation to address challenges, pioneering creative solutions for a sustainable future.',
+    },
+    {
+      imageSrc1: 'https://via.placeholder.com/400x300?text=Inclusivity+and+Equality+Image+1',
+      imageSrc2: 'https://via.placeholder.com/400x300?text=Inclusivity+and+Equality+Image+2',
+      title: 'Inclusivity and Equality',
+      description: 'Fostering inclusivity, diversity, and equality in all aspects of our initiatives.',
+    },
+  ];
+  
   return (
     <>
-        <div style={{marginTop:"100px"}}>
-      <Container>
-      <Row>
-        
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src="https://www.akshayapatra.org/wp-content/themes/akshay-patra/himage/milestones/2009.jpg" />
-          </Card>
-        </Col>
-        
-        <Col md={{ span: 4, offset: 4 }}>
-          <Card>
-            <Card.Body>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-
-      </Row>
-      </Container>
-      </div>
-
-      <div style={{marginTop:"100px"}}>
-      <Container>
-      <Row>
-        
-        <Col md={4}>
-          <Card>
-          <Card.Body>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        
-        <Col md={{ span: 4, offset: 4 }}>
-          <Card>
-          <Card.Img variant="top" src="https://www.akshayapatra.org/wp-content/themes/akshay-patra/himage/milestones/2009.jpg" />
-          </Card>
-        </Col>
-
-      </Row>
-      </Container>
-      </div>
-      
-      <div className='row g-4' style={{margin:"100px"}}>
-        <div className='col-md-6 col-lg-3'>
-          <div className='card '>
-            <div className='card-body text-centered'>
-            <img
-              alt="Achivements"
-              src="https://th.bing.com/th/id/OIP.nZTkwKsSr_W0_7st-Q7FSwHaGj?w=174&h=180&c=7&r=0&o=5&pid=1.7"
-              className="rounded-circle mb-3"
-            />
-            <h3 className='card-title mb-3'>
-              hello
-            </h3>
-            <p className='card-text'>
-              hello
-            </p>
-            <a href='#'>
-              <i className='bi bi-twitter text-dark mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-facebook mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-linkedin mx-1'>
-
-              </i>
-            </a>
-            </div>
-          </div>
-        </div>
-
-        <div className='col-md-6 col-lg-3'>
-          <div className='card '>
-            <div className='card-body text-centered'>
-            <img
-              alt="Achivements"
-              src="https://th.bing.com/th/id/OIP.nZTkwKsSr_W0_7st-Q7FSwHaGj?w=174&h=180&c=7&r=0&o=5&pid=1.7"
-              className="rounded-circle mb-3"
-            />
-            <h3 className='card-title mb-3'>
-              hello
-            </h3>
-            <p className='card-text'>
-              hello
-            </p>
-            <a href='/'>
-              <i className='bi bi-twitter mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-facebook mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-linkedin mx-1'>
-
-              </i>
-            </a>
-            </div>
-          </div>
-        </div>
-
-        <div className='col-md-6 col-lg-3'>
-          <div className='card '>
-            <div className='card-body text-centered'>
-            <img
-              alt="Achivements"
-              src="https://th.bing.com/th/id/OIP.nZTkwKsSr_W0_7st-Q7FSwHaGj?w=174&h=180&c=7&r=0&o=5&pid=1.7"
-              className="rounded-circle mb-3"
-            />
-            <h3 className='card-title mb-3'>
-              hello
-            </h3>
-            <p className='card-text'>
-              hello
-            </p>
-            <a href='/'>
-              <i className='bi bi-twitter mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-facebook mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-linkedin mx-1'>
-
-              </i>
-            </a>
-            </div>
-          </div>
-        </div>
-
-        <div className='col-md-6 col-lg-3'>
-          <div className='card '>
-            <div className='card-body text-centered'>
-            <img
-              alt="Achivements"
-              src="https://th.bing.com/th/id/OIP.nZTkwKsSr_W0_7st-Q7FSwHaGj?w=174&h=180&c=7&r=0&o=5&pid=1.7"
-              className="rounded-circle mb-3"
-            />
-            <h3 className='card-title mb-3'>
-              hello
-            </h3>
-            <p className='card-text'>
-              hello
-            </p>
-            <a href='/'>
-              <i className='bi bi-twitter mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-facebook mx-1'>
-
-              </i>
-            </a>
-            <a href='/'>
-              <i className='bi bi-linkedin mx-1'>
-
-              </i>
-            </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <Container className='text-center' style={{ marginTop: '60px' }}>
+      <h1>CORE AND ACHEIVEMENTS</h1>
+    </Container>
+    <Container style={{ marginTop: '60px' }}>
+      {[0, 1, 2, 3, 4].map((index) => (
+        <Row key={index} className="mb-4">
+          {index % 2 === 0 ? (
+            <>
+              <Col>
+                <Row className="justify-content-center align-items-center h-100">
+                  <Col xs={12} md={8} lg={6} className="mb-4">
+                    <h2 className="text-center text-md-start">{carouselItems[index].title}</h2>
+                    <p style={{fontSize:"25px"}} className="text-center text-md-start">{carouselItems[index].description}</p>
+                  </Col>
+                </Row>
+              </Col>
+              <Col>
+                <Carousel
+                  activeIndex={activeIndex}
+                  onSelect={handleSelect}
+                  data-bs-theme="dark"
+                  interval={null}
+                  keyboard={false}
+                  touch={false}
+                >
+                  <Carousel.Item key={index} onClick={(e) => e.stopPropagation()}>
+                    <img
+                      className="d-block w-100 img-fluid"
+                      src={carouselItems[index].imageSrc1}
+                      alt={`Slide ${index + 1}`}
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item key={index + 1} onClick={(e) => e.stopPropagation()}>
+                    <img
+                      className="d-block w-100 img-fluid"
+                      src={carouselItems[index].imageSrc2}
+                      alt={`Slide ${index + 2}`}
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </Col>
+            </>
+          ) : (
+            <>
+              <Col>
+                <Carousel
+                  activeIndex={activeIndex}
+                  onSelect={handleSelect}
+                  data-bs-theme="dark"
+                  interval={null}
+                  keyboard={false}
+                  touch={false}
+                >
+                  <Carousel.Item key={index} onClick={(e) => e.stopPropagation()}>
+                    <img
+                      className="d-block w-100 img-fluid"
+                      src={carouselItems[index].imageSrc1}
+                      alt={`Slide ${index + 1}`}
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item key={index + 1} onClick={(e) => e.stopPropagation()}>
+                    <img
+                      className="d-block w-100 img-fluid"
+                      src={carouselItems[index].imageSrc2}
+                      alt={`Slide ${index + 2}`}
+                    />
+                  </Carousel.Item>
+                </Carousel>
+              </Col>
+              <Col>
+                <Row className="justify-content-center align-items-center h-100">
+                  <Col xs={12} md={8} lg={6} className="mb-4">
+                    <h2  className="text-center text-md-end">{carouselItems[index].title}</h2>
+                    <p style={{fontSize:"25px"}} className="text-center text-md-end">{carouselItems[index].description}</p>
+                  </Col>
+                </Row>
+              </Col>
+            </>
+          )}
+        </Row>
+      ))}
+    </Container>
     </>
-  )
-}
+  );
+};
 
-export default CoreAch
+export default CoreAch;

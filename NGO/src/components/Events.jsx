@@ -2,7 +2,6 @@ import React from 'react'
 import EventsCard from './Eventscard';
 
 const Events = () => {
-    // Dummy data for events (replace with your actual event data)
     const events = [
       {
         id:1,
@@ -12,7 +11,6 @@ const Events = () => {
         time: '10:00 AM',
         registrationLink: 'https://example.com/event1-registration',
       }
-      // Add more events as needed
     ];
   
     return (
