@@ -9,25 +9,22 @@ import { Button } from 'react-bootstrap';
 const HeroSec = () => {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="white">
+      <Navbar bg="blue" data-bs-theme="white">
         <Container>
-          <Navbar.Brand as={Link} to="/" className='d-flex justify-content-center align-items-center'>
+        <Nav as={Link} to="/events">
               <img
-                  alt="logo"
-                  src="https://th.bing.com/th/id/OIP.XwYFe07ZN-pBCkhp9jYIIgHaHa?pid=ImgDet&rs=1"
-                  width="60"
-                  height="60"
-                  className="d-inline-block align-top"
-                />{' '}
-                  Non
-            </Navbar.Brand>
-            
-            <Nav>
+                alt="Mail"
+                src="https://logodix.com/logo/1072537.png"
+                width="20"
+                height="20"
+                className="d-inline-block align-top"
+              />{' '}ngo@gmail.com
+            </Nav>
+            <Nav className='ms-auto'>
             <Nav as={Link} to="/events">
-                <Button>+Donate</Button>
+                <Button>Donate</Button>
             </Nav>
             </Nav>
-
             <NavDropdown title=" Follow Us" id="basic-nav-dropdown" className='ms-auto' >
               <NavDropdown.Item href="/">
                 <img
@@ -68,27 +65,34 @@ const HeroSec = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav>
-            <Nav as={Link} to="/contact">
-              <img
-                alt="Call"
-                src="https://imgs.search.brave.com/162cWViyJpxJ_u1VZUH_gBet0dXrA2tFNxtuLkDNHfg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZncmVwby5jb20v/c2hvdy81MjM2L3Bo/b25lLWNhbGwuc3Zn.svg"
-                width="20"
-                height="20"
-                className="d-inline-block align-top"
-              />{' '}
-            </Nav>
-            <Nav as={Link} to="/events">
-              <img
-                alt="Mail"
-                src="https://logodix.com/logo/1072537.png"
-                width="20"
-                height="20"
-                className="d-inline-block align-top"
-              />{' '}
-            </Nav>
-          </Nav>
             
+          </Nav>
           
+        </Container>
+      </Navbar>
+       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary text-center">
+        <Container>
+          <Navbar.Brand as={Link} to="/" className='d-flex justify-content-center align-items-center mx-auto'>
+            <img
+              alt="logo"
+              src="https://th.bing.com/th/id/OIP.XwYFe07ZN-pBCkhp9jYIIgHaHa?pid=ImgDet&rs=1"
+              width="40"
+              height="40"
+              className="d-inline-block align-top"
+            />{' '}
+            Non
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav" className="text-center">
+            <Nav className="mx-auto">
+              <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+              <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+              <Nav.Link as={Link} to="/blog">Blog/News</Nav.Link>
+              <Nav.Link as={Link} to="/volunteer">Volunteer</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

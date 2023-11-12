@@ -43,10 +43,10 @@ const Footer = () => {
         </Container>
       </Footerr>
       
-      <Footerr className='bg-light d-flex justify-content-center align-items-center' style={{ height: "80px" }}>
-        <h3 style={{ margin: '0' }}>
+      <Footerr className='bg-light d-flex justify-content-center align-items-center' style={{ height: "60px" }}>
+        <h6 style={{ margin: '0' }}>
           Copyright © 2023 NGO Inc.
-        </h3>
+        </h6>
       </Footerr>
 
       
