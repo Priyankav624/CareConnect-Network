@@ -14,7 +14,7 @@ const Events = () => {
     ];
   
     return (
-      <div>
+      <div style={{ textAlign:"Center"}}>
         <h2>Upcoming Events</h2>
         {events.map((event) => (
           <EventsCard key={event.id} {...event} />

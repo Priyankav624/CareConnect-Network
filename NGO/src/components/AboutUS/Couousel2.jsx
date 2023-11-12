@@ -4,7 +4,7 @@ import { Carousel, Card, Button} from 'react-bootstrap';
 const Couousel2 = () => {
   return (
     <>
-    
+      
       
     </>
   )

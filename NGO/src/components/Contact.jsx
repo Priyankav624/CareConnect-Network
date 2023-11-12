@@ -13,47 +13,6 @@ const Contact = () => {
 
   return (
     <Container fluid style={{ marginBottom: '90px' }}>
-      <Row className="align-items-center">
-        <Col xs={12} lg={6}>
-          <Card className="h-100">
-            <Card.Header>Contact Us</Card.Header>
-            <Card.Body>
-              <Card.Title>Special title treatment</Card.Title>
-              <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
-              </Card.Text>
-              <Button variant="primary">Volunteer</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col xs={12} lg={6} className="p-0">
-          <img
-            src="https://www.akshayapatra.org/wp-content/themes/akshay-patra/himage/milestones/2009.jpg"
-            alt="NGO"
-            style={{ width: '100%', height: '400px', objectFit: 'cover', borderBottomLeftRadius:"70px"}}
-          />
-        </Col>
-      </Row>
-      <div className="bg-light" style={{  display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      {/* First Card */}
-      <Card style={{ width: '200px', height: '200px' }} className="m-2">
-        <Card.Img variant="top" src="your_first_image_url.jpg" style={{ objectFit: 'cover', height: '100%' }} />
-        <Card.Body>
-          <Card.Title>Card Title 1</Card.Title>
-          <Button variant="primary">Click me</Button>
-        </Card.Body>
-      </Card>
-
-      {/* Second Card */}
-      <Card style={{ width: '200px', height: '200px' }} className="m-2">
-        <Card.Img variant="top" src="your_second_image_url.jpg" style={{ objectFit: 'cover', height: '100%' }} />
-        <Card.Body>
-          <Card.Title>Card Title 2</Card.Title>
-          <Button variant="primary">Click me</Button>
-        </Card.Body>
-      </Card>
-    </div>
 
       <Container className='text-center' style={{ marginTop: '90px',marginBottom: '90px' }}>
           <h2>Contact Us</h2>
