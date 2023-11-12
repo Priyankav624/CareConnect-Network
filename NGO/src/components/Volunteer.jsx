@@ -1,5 +1,4 @@
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import VolunteerForm from './VolunteerForm';
@@ -9,13 +8,9 @@ const Volunteer = () => {
   
   return (
     <>
-    <Container style={{marginTop:"100px"}}>
+    <Container style={{marginTop:"50px"}}>
       <h2 className="text-center mb-4">To a new journey.</h2>
-      <h6 className='text-center mb-4'>
-        Volunteering with us allows you to bring about change at the grassroots level. We welcome volunteers from all walks of life. Whatever your interest: be it education, environment, animal welfare or something else, there’s an opportunity to match.
-        Being a volunteer allows you to elevate your work to an adventure, a journey to a better tomorrow. So, where do you want to go?</h6>
-
-      <Row className="mb-5">
+      <Row className="mb-5" style={{marginTop:"50px"}}>
         <Col md={6}>
         <img
           className="d-block w-100"
@@ -23,37 +18,26 @@ const Volunteer = () => {
           alt="First slide"
         />
         </Col>
-        <Col md={6}>
-        <p>
+        <Col md={6} className="d-flex align-items-center justify-content-center">
+            <p className="text-center">
           Volunteer with NGO dedicated to transforming the education of underprivileged children to make a 
           difference in the community. Go beyond monetary assistance and into their lives, bringing change 
           with your own hands and experiencing the fulfillment of your commitment to society.
           At Bhumi, we urge everyone to volunteer and make the change they wish to see in the world. You may 
           achieve change at the grassroots level by volunteering for NGO like us. We urge people from all walks of life to volunteer in 
           NGO based on their interests, whether it is education, the environment, or animal welfare since we have opportunities in these areas available for them.
-        </p>
+         </p>
         </Col>
       </Row>
     </Container>
-    <Container>
-      <Row>
-        <Col>
-        <h2>Options for Donations</h2>
-          <p>
-            Choose from the following donation options and make a positive impact:
-          </p>
-          <ul>
-            <li>$10 - Provides a meal for a family in need</li>
-            <li>$25 - Supports education for a child for a month</li>
-            <li>$50 - Contributes to healthcare services for the underserved</li>
-            <li>$100 - Helps in disaster relief efforts</li>
-          </ul>
-        </Col>
-
-        <Col>
-          <VolunteerForm />
-        </Col>
-      </Row>
+    <Container style={{marginTop:"50px"}} className='text-center'> 
+        <img 
+          src='https://www.righttolive.org/resources/Right%20to%20Live/Volunteer/IndividualVolunteer.jpeg'
+          alt ='Volunteer'
+          style={{height:"300px", width:"400px"}}
+        ></img>
+          <br /><br />
+    <VolunteerForm />
     </Container>
     <Donation />
     </>

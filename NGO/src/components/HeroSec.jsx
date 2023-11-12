@@ -19,7 +19,7 @@ const HeroSec = () => {
               />{' '}ngo@gmail.com
             </Nav>
             <Nav className='ms-auto'>
-            <Nav as={Link} to="/events">
+            <Nav as={Link} to="/volunteer">
                 <Button>Donate</Button>
             </Nav>
             </Nav>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
     <>
-      <div className="who-we-are-section text-center" style={{ marginTop: '70px' }}>
+      <div className="who-we-are-section text-center" style={{ marginTop: '50px' }}>
         <Container>
           <h2 className="hero-title">Welcome to Valsco NGO</h2>
           <p className="hero-subtitle lead">
@@ -14,7 +16,7 @@ const AboutUs = () => {
       </div>
 
       <Container className="history-section text-center">
-        <h2 className="mb-4">Our History</h2>
+        <h2 className="mb-4" style={{ marginTop: '40px' }}>Our History</h2>
         <Row className="mb-5 justify-content-center align-items-center">
           <Col md={6}>
             <img
@@ -31,7 +33,7 @@ const AboutUs = () => {
             </p>
           </Col>
         </Row>
-        <h2 className="mb-4">Our Mission</h2>
+        <h2 className="mb-4" style={{ marginTop: '50px' }}>Our Mission</h2>
         <Row className="mb-5 justify-content-center align-items-center">
           <Col md={6}>
             <p>
@@ -56,7 +58,9 @@ const AboutUs = () => {
             Your support enables us to create positive change and build a better future for all.
             Together, we can make a lasting impact on communities and lives.
           </Card.Text>
-          <Button variant="dark">Donate Now</Button>
+          <Nav.Link as={Link} to="/volunteer">
+                      <Button variant='dark'>Donate Now</Button>
+                    </Nav.Link>
         </Card>
       </Container>
     </>

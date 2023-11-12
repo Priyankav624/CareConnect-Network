@@ -25,6 +25,7 @@ const VolunteerForm = () => {
   return (
     <>
       <h2>Volunteer Information Form</h2>
+      <br />
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="firstName">
           <Form.Label>First Name</Form.Label>
@@ -37,7 +38,7 @@ const VolunteerForm = () => {
             required
           />
         </Form.Group>
-
+        <br />
         <Form.Group controlId="lastName">
           <Form.Label>Last Name</Form.Label>
           <Form.Control
@@ -49,7 +50,7 @@ const VolunteerForm = () => {
             required
           />
         </Form.Group>
-
+        <br />
         <Form.Group controlId="email">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
@@ -61,7 +62,7 @@ const VolunteerForm = () => {
             required
           />
         </Form.Group>
-
+        <br />
         <Form.Group controlId="phoneNumber">
           <Form.Label>Phone Number</Form.Label>
           <Form.Control
@@ -73,7 +74,7 @@ const VolunteerForm = () => {
             required
           />
         </Form.Group>
-
+        <br />
         <Form.Group controlId="donationAmount">
           <Form.Label>Donation Amount</Form.Label>
           <Form.Control
@@ -89,7 +90,7 @@ const VolunteerForm = () => {
             <option value="100">$100</option>
           </Form.Control>
         </Form.Group>
-
+        <br />
         <Button variant="primary" type="submit">
           Submit
         </Button>

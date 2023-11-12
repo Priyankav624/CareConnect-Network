@@ -4,6 +4,9 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 const Donation = () => {
   return (
@@ -30,7 +33,9 @@ const Donation = () => {
                         Your donation contributes to positive change and meaningful impact.
                       </p>
                     </Card.Text>
-                    <Button variant="dark">Donate Now</Button>
+                    <Nav.Link as={Link} to="/volunteer">
+                      <Button>Donate</Button>
+                    </Nav.Link>
                   </Card.Body>
                 </Card>
               </Col>
