@@ -2,11 +2,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function CollapsibleExample() {
+const Navbar2 = () =>  {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/" className='d-flex justify-content-center align-items-center'>
+              <img
+                  alt="logo"
+                  src="https://th.bing.com/th/id/OIP.XwYFe07ZN-pBCkhp9jYIIgHaHa?pid=ImgDet&rs=1"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />{' '}
+                  Non
+            </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -25,4 +34,4 @@ function CollapsibleExample() {
   );
 }
 
-export default CollapsibleExample;
+export default Navbar2;
