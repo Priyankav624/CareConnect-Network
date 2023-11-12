@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Carousel, Container } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav'
+import { Link } from 'react-router-dom';
 
 const CarouselSlide = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,27 +14,24 @@ const CarouselSlide = () => {
 
   const imageStyle = {
     width: '100%',
-    maxHeight: '530px', 
+    maxHeight: '530px',
     objectFit: 'cover',
   };
 
   const carouselItems = [
     {
-      
       caption: '“The best way to find yourself is to lose yourself in the service of others.”',
-      imageSrc: 'https://imgs.search.brave.com/audkaeq9MZOOLFCEVs14ESDUZeAZPhQzbVcxcoJTW6M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhpbmtyaWdodG1l/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy9VbnRp/dGxlZC1kZXNpZ24t/MzEtMTExMHg2NjIt/MS0xMDI0eDYxMS5w/bmc', 
-    
+      imageSrc:
+        'https://imgs.search.brave.com/audkaeq9MZOOLFCEVs14ESDUZeAZPhQzbVcxcoJTW6M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhpbmtyaWdodG1l/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wMy9VbnRp/dGxlZC1kZXNpZ24t/MzEtMTExMHg2NjIt/MS0xMDI0eDYxMS5w/bmc',
     },
     {
-      
       caption: '“Alone, we can do so little; together, we can do so much.”',
-      imageSrc: 'https://imgs.search.brave.com/nRezYj4meYZIedltHs9o_EVtGGR89m3WVuNenclkTvk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZWZl/bmNlZm9yY2hpbGRy/ZW4ub3JnL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzAyL2No/aWxkcmVuLW9uLXRo/ZS1tb3ZlLmpwZw',
-      
+      imageSrc:
+        'https://imgs.search.brave.com/nRezYj4meYZIedltHs9o_EVtGGR89m3WVuNenclkTvk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZWZl/bmNlZm9yY2hpbGRy/ZW4ub3JnL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzAyL2No/aWxkcmVuLW9uLXRo/ZS1tb3ZlLmpwZw',
     },
     {
       caption: '“Unity for Change”',
       imageSrc: 'https://th.bing.com/th/id/OIP.GCHSbFjhcFwW0lnBxbPpZAHaDt?pid=ImgDet&rs=1',
-      
     },
   ];
 
@@ -54,11 +53,12 @@ const CarouselSlide = () => {
             alt={`Slide ${index + 1}`}
             style={imageStyle}
           />
-          <Carousel.Caption className="position-absolute top-50 end-10 translate-middle-y">
-              <h5 style={{ fontSize: '4rem', fontWeight: 'bold' }} >{item.caption}</h5>
+          <Carousel.Caption className="position-absolute top-50 end-10 translate-middle-y text-center">
+            <h5 style={{ fontSize: '1rem', fontWeight: 'bold' }} className="d-inline-block responsive-caption">{item.caption}</h5><br/>
+            <Nav.Link as={Link} to="/volunteer">
             <Button variant="success" style={{ fontSize: '1rem', fontWeight: 'bold' }}>
               Donate
-            </Button>
+            </Button></Nav.Link>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
