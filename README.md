@@ -56,7 +56,6 @@ This command will build the project and open it in your default web browser. The
 The project structure is organized as follows:
 
 - `src/`: Contains the source code for the React application.
-- `public/`: Contains static assets and the HTML file used as a template for the application.
 - `package.json`: Defines the project dependencies and scripts.
 
 ## Available Scripts
