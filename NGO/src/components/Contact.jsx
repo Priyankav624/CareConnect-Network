@@ -14,25 +14,25 @@ const Contact = () => {
   return (
     <Container fluid style={{ marginBottom: '90px' }}>
 
-      <Container className='text-center' style={{ marginTop: '90px',marginBottom: '90px' }}>
+      <Container className='text-center' style={{ marginTop: '40px',marginBottom: '90px' }}>
           <h2>Contact Us</h2>
           <p>If you have any questions or inquiries, please fill out the form below:</p>
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} style={{ marginTop: '40px' }}>
             <Form.Group controlId="name">
               <Form.Label>Your Name</Form.Label>
               <Form.Control type="text" placeholder="Enter your name" required />
             </Form.Group>
-
+            <br />
             <Form.Group controlId="email">
               <Form.Label>Email Address</Form.Label>
               <Form.Control type="email" placeholder="Enter your email address" required />
             </Form.Group>
-
+            <br />
             <Form.Group controlId="message">
               <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" rows={4} placeholder="Enter your message" required />
             </Form.Group>
-
+            <br />
             <Button variant="primary" type="submit">
               Submit
             </Button>

@@ -88,44 +88,45 @@ const ProjectList = () => {
       ? projectsData
       : projectsData.filter((project) => project.status === statusFilter);
 
-      return (
-        <div className="container mt-4">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="form-group">
-                <label htmlFor="statusFilter">Filter by Status:</label>
-                <select
-                  id="statusFilter"
-                  className="form-control"
-                  value={statusFilter}
-                  onChange={(e) => handleFilterChange(e.target.value)}
-                >
-                  <option value="All">All</option>
-                  <option value="Completed">Completed</option>
-                  <option value="Ongoing">Ongoing</option>
-                  <option value="In Progress">In Progress</option>
-                </select>
-              </div>
-            </div>
-          </div>
-    
-          <div className="row">
-            {filteredProjects.map((project) => (
-            <Link to={`/project/${project.id}`}>
-              <div key={project.id} className="col-md-4 mb-4" onClick={() => handleProjectClick(project.id)}>
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">{project.name}</h5>
-                    <p className="card-text">Status: {project.status}</p>
-                  </div>
-                </div>
-              </div>
+      
+  return (
+    <Container className="mt-4">
+      <Row>
+        <Col md={6}>
+          <Form.Group>
+            <Form.Label htmlFor="statusFilter">Filter by Status:</Form.Label>
+            <Form.Control
+              as="select"
+              id="statusFilter"
+              value={statusFilter}
+              onChange={(e) => handleFilterChange(e.target.value)}
+            >
+              <option value="All">All</option>
+              <option value="Completed">Completed</option>
+              <option value="Ongoing">Ongoing</option>
+              <option value="In Progress">In Progress</option>
+            </Form.Control>
+          </Form.Group>
+        </Col>
+      </Row>
+      <br />
+      <Row>
+        {filteredProjects.map((project) => (
+          <Col key={project.id} md={4} className="mb-4">
+            <Link to={`/project/${project.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>{project.name}</Card.Title>
+                  <Card.Text>Status: {project.status}</Card.Text>
+                </Card.Body>
+              </Card>
             </Link>
-            ))}
-          </div>
-    
-        </div>
-      );
-    };
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
 
 export default ProjectList;
+
