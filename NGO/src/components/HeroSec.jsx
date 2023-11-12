@@ -1,55 +1,98 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Button } from 'react-bootstrap';
 
 const HeroSec = () => {
-  const imageStyle = {
-    width: '100%',  // Set the width to 100% to make sure it fits the container
-    height: '400px', // Set the desired height
-    objectFit: 'cover', // Use 'cover' to maintain aspect ratio and cover the entire container
-  };
-
   return (
     <>
-    <Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://th.bing.com/th/id/OIP.VGuDJZ6yzZcKVtMtVS6J0gHaD5?w=298&h=180&c=7&r=0&o=5&pid=1.7"
-          alt="First slide"
-          style={imageStyle}
-        />
-        <Carousel.Caption>
-          <h5>“The best way to find yourself is to lose yourself in the service of others.”</h5>
-          <p>– Mahatma Gandhi</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://th.bing.com/th/id/OIP.VGuDJZ6yzZcKVtMtVS6J0gHaD5?w=298&h=180&c=7&r=0&o=5&pid=1.7"
-          alt="Second slide"
-          style={imageStyle}
-        />
-        <Carousel.Caption>
-          <h5>“Alone, we can do so little; together, we can do so much.”</h5>
-          <p>– Helen Keller</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://th.bing.com/th/id/OIP.VGuDJZ6yzZcKVtMtVS6J0gHaD5?w=298&h=180&c=7&r=0&o=5&pid=1.7"
-          alt="Third slide"
-          style={imageStyle}
-        />
-        <Carousel.Caption>
-          <h5>“Act as if what you do makes a difference. It does.”</h5>
-          <p>– William James</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+      <Navbar bg="light" data-bs-theme="white">
+        <Container>
+          <Navbar.Brand as={Link} to="/" className='d-flex justify-content-center align-items-center'>
+              <img
+                  alt="logo"
+                  src="https://th.bing.com/th/id/OIP.XwYFe07ZN-pBCkhp9jYIIgHaHa?pid=ImgDet&rs=1"
+                  width="60"
+                  height="60"
+                  className="d-inline-block align-top"
+                />{' '}
+                  Non
+            </Navbar.Brand>
+            
+            <Nav>
+            <Nav as={Link} to="/events">
+                <Button>+Donate</Button>
+            </Nav>
+            </Nav>
+
+            <NavDropdown title=" Follow Us" id="basic-nav-dropdown" className='ms-auto' >
+              <NavDropdown.Item href="/">
+                <img
+                  alt="Instagram"
+                  src="https://imgs.search.brave.com/2h-NuEcS2uSMOFCQSE3xDEG0SPq2f1oci7FQsVDkkDU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9JbnN0YWdy/YW0vSW5zdGFncmFt/LUdseXBoLUJsYWNr/LUxvZ28ud2luZS5z/dmc.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />{' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/">
+                <img
+                  alt="FaceBook"
+                  src="https://imgs.search.brave.com/kaecgXGxskzEoBDlpzKOVZOH690C9K7lQ7MfsG3I2Vk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9GYWNlYm9v/ay9GYWNlYm9vay1m/X0xvZ28tQmxhY2st/TG9nby53aW5lLnN2/Zw.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                />
+                {' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/">
+                <img
+                  alt="Twitter"
+                  src="https://imgs.search.brave.com/ziHbylAtJ5uQ92s3qGKm7OlxRnyN9Whcy5ImsdgHMVA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91eHdp/bmcuY29tL3dwLWNv/bnRlbnQvdGhlbWVz/L3V4d2luZy9kb3du/bG9hZC9icmFuZHMt/YW5kLXNvY2lhbC1t/ZWRpYS90d2l0dGVy/LXNxdWFyZS1pY29u/LnN2Zw.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+                  />{' '}
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/">
+                <img
+                  alt="Linked In"
+                  src="https://imgs.search.brave.com/NEJ5KMm2yHFypxpuVZiu_TUC2Vz43URYudu2k3v7HBU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9MaW5rZWRJ/bi9MaW5rZWRJbi1J/Y29uLUJsYWNrLUxv/Z28ud2luZS5zdmc.svg"
+                  width="30"
+                  height="30"
+                  className="d-inline-block align-top"
+              />{' '}
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav>
+            <Nav as={Link} to="/contact">
+              <img
+                alt="Call"
+                src="https://imgs.search.brave.com/162cWViyJpxJ_u1VZUH_gBet0dXrA2tFNxtuLkDNHfg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZncmVwby5jb20v/c2hvdy81MjM2L3Bo/b25lLWNhbGwuc3Zn.svg"
+                width="20"
+                height="20"
+                className="d-inline-block align-top"
+              />{' '}
+            </Nav>
+            <Nav as={Link} to="/events">
+              <img
+                alt="Mail"
+                src="https://logodix.com/logo/1072537.png"
+                width="20"
+                height="20"
+                className="d-inline-block align-top"
+              />{' '}
+            </Nav>
+          </Nav>
+            
+          
+        </Container>
+      </Navbar>
     </>
-  );
-};
+  )
+}
 
 export default HeroSec;
