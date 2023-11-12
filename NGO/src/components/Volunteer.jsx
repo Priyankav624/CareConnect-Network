@@ -9,7 +9,7 @@ const Volunteer = () => {
   return (
     <>
     <Container style={{marginTop:"50px"}}>
-      <h2 className="text-center mb-4">To a new journey.</h2>
+      <h2 className="text-center mb-4">Be the Change: Volunteer Today!</h2>
       <Row className="mb-5" style={{marginTop:"50px"}}>
         <Col md={6}>
         <img

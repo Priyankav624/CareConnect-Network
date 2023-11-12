@@ -1,6 +1,7 @@
 import React from 'react';
 import EventsCard from './EventsCard';
 import { Container , Row} from 'react-bootstrap';
+import Donation from './Donation';
 
 const Events = () => {
   const events = [
@@ -88,12 +89,13 @@ const Events = () => {
   
   return (
     <Container>
-      <h2 style={{textAlign:"center"}}>Upcoming Events</h2>
+      <h2 style={{textAlign:"center" , marginTop:"40px", marginBottom:"40px"}}>Upcoming Events</h2>
       <Row>
         {events.map((event) => (
           <EventsCard key={event.id} {...event} />
         ))}
       </Row>
+      <Donation />
     </Container>
   );
 

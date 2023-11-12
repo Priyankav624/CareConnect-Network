@@ -91,6 +91,7 @@ const BlogsNews = () => {
           <br />
         </div>
       ))}
+      <Donation />
     </div>
   );
 };
