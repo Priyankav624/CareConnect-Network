@@ -28,7 +28,7 @@ Replace `your-username` and `your-react-project` with your GitHub username and t
 Change into the project directory using the following command:
 
 ```bash
-cd Ngo-Website-Valsco-/NGO
+cd Ngo-Website-Valsco-/NGO/
 ```
 
 ## Install Dependencies
