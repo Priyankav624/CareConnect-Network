@@ -1,0 +1,49 @@
+.impact-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.impact-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollX 10s linear infinite;
+}
+
+.impact-card {
+  min-width: 280px;
+  height: 220px;
+  background-color: #f8f9fa;
+  border: none;
+  margin: 10px;
+  padding :0 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  background-color: #e9ecef;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.impact-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Loop scroll */
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+
+.impact-carousel-wrapper:hover .impact-carousel-track {
+  animation-play-state: paused;  /* 👈 Pause when hovered */
+}

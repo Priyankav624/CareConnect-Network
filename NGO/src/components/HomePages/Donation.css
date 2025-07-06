@@ -1,0 +1,24 @@
+.donation-section {
+  background: linear-gradient(to right, #f8f9fa, #e0ecff);
+  border-radius: 16px;
+}
+
+.donation-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.donation-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.donate-btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  padding: 10px 24px;
+}
+
+.donate-btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}

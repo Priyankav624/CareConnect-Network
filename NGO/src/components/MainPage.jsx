@@ -1,7 +1,7 @@
 import React from 'react'
-import CoreAch from './HomePage/CoreAch';
-import Carousels from './HomePage/Carousels';
-import Donation from './Donation';
+import CoreAch from './HomePages/CoreAch';
+import Carousels from './HomePages/CarouselSlide';
+import Donation from './HomePages/Donation';
 
 const HomePage = () => {
   return (

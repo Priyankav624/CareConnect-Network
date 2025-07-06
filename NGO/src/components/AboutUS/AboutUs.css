@@ -1,0 +1,23 @@
+.journey-container .horizontal-journey {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+
+.journey-container .journey-card {
+  min-width: 260px;
+  max-width: 300px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+}
+
+.journey-container .journey-card:hover {
+  transform: translateY(-5px);
+}
+
+.journey-container .icon {
+  font-size: 2.5rem;
+}

@@ -1,13 +1,12 @@
-# Ngo-Valsco React JS Project Setup Guide
+# CareConnent Network React JS Project Setup Guide
 
-link to NGO Website: https://valsco-ngo-priyanka.netlify.app/
+link to CareConnent Network Website: 
 
-#I have done some changes 
-link to NGO Website: https://valscongo-priyanka.netlify.app/
+
 
 ## Introduction
 
-Welcome to the setup guide for the Ngo-Valsco React JS project! This document will walk you through the steps required to set up and run the project on your local machine.
+Welcome to the setup guide for the CareConnect Network React JS project! This document will walk you through the steps required to set up and run the project on your local machine.
 
 ## Prerequisites
 
@@ -21,7 +20,7 @@ Before you begin, make sure you have the following installed on your machine:
 Open your terminal and run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/Priyankav624/Ngo-Website-Valsco-.git
+git clone https://github.com/Priyankav624/CareConnent-Network.git
 ```
 
 Replace `your-username` and `your-react-project` with your GitHub username and the name of your React project.
@@ -31,7 +30,7 @@ Replace `your-username` and `your-react-project` with your GitHub username and t
 Change into the project directory using the following command:
 
 ```bash
-cd Ngo-Website-Valsco-/NGO/
+cd CareConnect-Network/NGO/
 ```
 
 ## Install Dependencies
@@ -74,4 +73,4 @@ To learn more about React, check out the [React documentation](https://reactjs.o
 
 ---
 
-That's it! You should now have the Ngo-Valsco React JS project set up on your local machine. If you encounter any issues, refer to the documentation or feel free to reach out to the me. Happy coding!
+That's it! You should now have the CareConnect Network React JS project set up on your local machine. If you encounter any issues, refer to the documentation or feel free to reach out to the me. Happy coding!

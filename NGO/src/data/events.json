@@ -1,0 +1,22 @@
+[
+  { "id": 1, "title": "Empowerment through Education", "description": "Empowering underprivileged communities via education.", "date": "2025-08-01", "time": "10:00 AM", "category": "Education" },
+  { "id": 2, "title": "Health & Wellness Fair", "description": "Free medical checkup and awareness drive.", "date": "2025-08-03", "time": "2:00 PM", "category": "Health" },
+  { "id": 3, "title": "Green Earth Mission", "description": "Tree plantation and eco workshop.", "date": "2025-08-05", "time": "9:30 AM", "category": "Environment" },
+  { "id": 4, "title": "Volunteer Induction Meet", "description": "Intro to our NGO’s work and volunteering roles.", "date": "2025-08-08", "time": "11:00 AM", "category": "Education" },
+  { "id": 5, "title": "Hope Drive", "description": "Donating essentials to flood-affected areas.", "date": "2025-08-10", "time": "1:00 PM", "category": "Community" },
+  { "id": 6, "title": "Unity Fest", "description": "Cultural celebration with music and dance.", "date": "2025-08-12", "time": "5:00 PM", "category": "Culture" },
+  { "id": 7, "title": "Mental Health Seminar", "description": "Awareness and support for mental well-being.", "date": "2025-08-14", "time": "3:00 PM", "category": "Health" },
+  { "id": 8, "title": "Tech4Good Workshop", "description": "Using coding for NGO solutions.", "date": "2025-08-17", "time": "10:30 AM", "category": "Technology" },
+  { "id": 9, "title": "Clean River Campaign", "description": "River bank clean-up and plastic awareness.", "date": "2025-08-20", "time": "7:30 AM", "category": "Environment" },
+  { "id": 10, "title": "Independence Day Celebration", "description": "Patriotic events and flag hoisting.", "date": "2025-08-15", "time": "8:00 AM", "category": "Culture" },
+  { "id": 11, "title": "Nutrition Drive", "description": "Free food distribution for children.", "date": "2025-09-02", "time": "12:00 PM", "category": "Health" },
+  { "id": 12, "title": "Coding for Beginners", "description": "Teach kids HTML & CSS basics.", "date": "2025-09-04", "time": "9:00 AM", "category": "Technology" },
+  { "id": 13, "title": "NGO Fundraiser Meetup", "description": "Meet donors & share stories.", "date": "2025-09-07", "time": "6:00 PM", "category": "Community" },
+  { "id": 14, "title": "Heritage Walk", "description": "Explore city’s history and stories.", "date": "2025-09-10", "time": "7:00 AM", "category": "Culture" },
+  { "id": 15, "title": "Women Empowerment Talk", "description": "Real stories & workshops for women.", "date": "2025-09-14", "time": "11:00 AM", "category": "Education" },
+  { "id": 16, "title": "Children’s Day Carnival", "description": "Games, art, and talent showcase.", "date": "2025-09-18", "time": "3:00 PM", "category": "Culture" },
+  { "id": 17, "title": "AI for NGOs", "description": "How AI can solve local problems.", "date": "2025-09-21", "time": "2:00 PM", "category": "Technology" },
+  { "id": 18, "title": "Art for Cause Exhibition", "description": "Display and auction by local artists.", "date": "2025-09-24", "time": "5:30 PM", "category": "Community" },
+  { "id": 19, "title": "Eco Walk", "description": "Walking event promoting clean lifestyle.", "date": "2025-09-27", "time": "6:30 AM", "category": "Environment" },
+  { "id": 20, "title": "Tech Talks 2025", "description": "Tech innovations from students.", "date": "2025-09-30", "time": "1:30 PM", "category": "Technology" }
+]
